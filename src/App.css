@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.selector {
+  position: fixed;
+  right: 24px;
+  width: 320px;
+  bottom: 25vh;
+  color: white;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.selector_section_title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.selector_section_values {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.item {
+  transition: 0.4s opacity;
+}
+
+.item_label {
+  font-size: 12px;
+  color: grey;
+  transition: 0.4s all;
+}
+
+.item_dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: solid 2px #999999;
+}
+
+.item.item-active .item_label {
+  color: white;
+}
